@@ -110,20 +110,45 @@ The app empowers developers to categorize and tag their snippets based on progra
 ## 📂 Repository Structure
 
 ```sh
-snippet-manager/
-│
-├── backend/           # Node.js + Express server (API)
-│   ├── models/        # MongoDB models
-│   ├── routes/        # API routes
-│   ├── controllers/   # Business logic for handling requests
-│   ├── .env           # Environment variables for backend
-│   └── server.js      # Main entry point for the backend server
-│
-└── frontend/          # React + TypeScript frontend
-    ├── src/           # Source code for React components and state management
-    ├── public/        # Static assets
-    ├── .env           # Environment variables for frontend
-    └── index.tsx      # Main entry point for the React app
+└── snippet-manager/
+    ├── README.md
+    ├── backend
+    │   ├── .gitignore
+    │   ├── package-lock.json
+    │   ├── package.json
+    │   ├── src
+    │   │   ├── app.ts
+    │   │   ├── controllers
+    │   │   ├── models
+    │   │   └── routes
+    │   └── tsconfig.json
+    └── frontend
+        ├── .gitignore
+        ├── dist
+        │   ├── app.js
+        │   ├── controllers
+        │   ├── models
+        │   └── routes
+        ├── package-lock.json
+        ├── package.json
+        ├── public
+        │   ├── index.html
+        │   ├── logo.png
+        │   ├── manifest.json
+        │   └── robots.txt
+        ├── src
+        │   ├── App.css
+        │   ├── App.tsx
+        │   ├── components
+        │   ├── index.css
+        │   ├── index.tsx
+        │   ├── logo.svg
+        │   ├── react-app-env.d.ts
+        │   ├── reportWebVitals.ts
+        │   ├── setupTests.ts
+        │   ├── store
+        │   └── types
+        └── tsconfig.json
 ```
 
 ---
