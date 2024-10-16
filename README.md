@@ -260,6 +260,7 @@ The app empowers developers to categorize and tag their snippets based on progra
 | [robots.txt](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/public/robots.txt) | <code>❯ REPLACE-ME</code> |
 
 </details>
+
 ---
 
 ## 🚀 Getting Started
