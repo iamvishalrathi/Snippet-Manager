@@ -20,8 +20,12 @@
 	<img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=HTML5&logoColor=white" alt="HTML5">
 	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
 	<img src="https://img.shields.io/badge/Axios-5A29E4.svg?style=flat&logo=Axios&logoColor=white" alt="Axios">
+	<img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=flat&logo=MongoDB&logoColor=white" alt="MongoDB">
+	<img src="https://img.shields.io/badge/tsnode-3178C6.svg?style=flat&logo=ts-node&logoColor=white" alt="tsnode">
+	<br>
 	<img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white" alt="TypeScript">
 	<img src="https://img.shields.io/badge/Ajv-23C8D2.svg?style=flat&logo=Ajv&logoColor=white" alt="Ajv">
+	<img src="https://img.shields.io/badge/Express-000000.svg?style=flat&logo=Express&logoColor=white" alt="Express">
 	<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
 </p>
 
@@ -155,66 +159,107 @@ The app empowers developers to categorize and tag their snippets based on progra
 
 ## 🧩 Modules
 
-<details closed><summary>.</summary>
+<details closed><summary>backend</summary>
 
 | File | Summary |
 | --- | --- |
-| [package-lock.json](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/package-lock.json) | <code>❯ REPLACE-ME</code> |
-| [tsconfig.json](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/tsconfig.json) | <code>❯ REPLACE-ME</code> |
-| [package.json](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/package.json) | <code>❯ REPLACE-ME</code> |
+| [package-lock.json](https://github.com/iamvishalrathi/snippet-manager/blob/main/backend/package-lock.json) | <code>❯ REPLACE-ME</code> |
+| [tsconfig.json](https://github.com/iamvishalrathi/snippet-manager/blob/main/backend/tsconfig.json) | <code>❯ REPLACE-ME</code> |
+| [package.json](https://github.com/iamvishalrathi/snippet-manager/blob/main/backend/package.json) | <code>❯ REPLACE-ME</code> |
 
 </details>
 
-<details closed><summary>src</summary>
+<details closed><summary>backend.src</summary>
 
 | File | Summary |
 | --- | --- |
-| [react-app-env.d.ts](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/react-app-env.d.ts) | <code>❯ REPLACE-ME</code> |
-| [reportWebVitals.ts](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/reportWebVitals.ts) | <code>❯ REPLACE-ME</code> |
-| [index.css](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/index.css) | <code>❯ REPLACE-ME</code> |
-| [App.css](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/App.css) | <code>❯ REPLACE-ME</code> |
-| [setupTests.ts](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/setupTests.ts) | <code>❯ REPLACE-ME</code> |
-| [App.tsx](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/App.tsx) | <code>❯ REPLACE-ME</code> |
-| [index.tsx](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/index.tsx) | <code>❯ REPLACE-ME</code> |
+| [app.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/backend/src/app.ts) | <code>❯ REPLACE-ME</code> |
 
 </details>
 
-<details closed><summary>src.types</summary>
+<details closed><summary>backend.src.controllers</summary>
 
 | File | Summary |
 | --- | --- |
-| [Snippet.ts](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/types/Snippet.ts) | <code>❯ REPLACE-ME</code> |
+| [snippetController.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/backend/src/controllers/snippetController.ts) | <code>❯ REPLACE-ME</code> |
 
 </details>
 
-<details closed><summary>src.components</summary>
+<details closed><summary>backend.src.models</summary>
 
 | File | Summary |
 | --- | --- |
-| [CreateSnippet.tsx](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/components/CreateSnippet.tsx) | <code>❯ REPLACE-ME</code> |
-| [Navbar.tsx](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/components/Navbar.tsx) | <code>❯ REPLACE-ME</code> |
-| [SnippetList.tsx](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/components/SnippetList.tsx) | <code>❯ REPLACE-ME</code> |
+| [Snippet.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/backend/src/models/Snippet.ts) | <code>❯ REPLACE-ME</code> |
 
 </details>
 
-<details closed><summary>src.store</summary>
+<details closed><summary>backend.src.routes</summary>
 
 | File | Summary |
 | --- | --- |
-| [snippetStore.ts](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/src/store/snippetStore.ts) | <code>❯ REPLACE-ME</code> |
+| [snippetRoutes.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/backend/src/routes/snippetRoutes.ts) | <code>❯ REPLACE-ME</code> |
 
 </details>
 
-<details closed><summary>public</summary>
+<details closed><summary>frontend</summary>
 
 | File | Summary |
 | --- | --- |
-| [index.html](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/public/index.html) | <code>❯ REPLACE-ME</code> |
-| [manifest.json](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/public/manifest.json) | <code>❯ REPLACE-ME</code> |
-| [robots.txt](https://github.com/iamvishalrathi/Snippet-Manager/blob/main/public/robots.txt) | <code>❯ REPLACE-ME</code> |
+| [package-lock.json](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/package-lock.json) | <code>❯ REPLACE-ME</code> |
+| [tsconfig.json](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/tsconfig.json) | <code>❯ REPLACE-ME</code> |
+| [package.json](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/package.json) | <code>❯ REPLACE-ME</code> |
 
 </details>
 
+<details closed><summary>frontend.src</summary>
+
+| File | Summary |
+| --- | --- |
+| [react-app-env.d.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/react-app-env.d.ts) | <code>❯ REPLACE-ME</code> |
+| [reportWebVitals.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/reportWebVitals.ts) | <code>❯ REPLACE-ME</code> |
+| [index.css](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/index.css) | <code>❯ REPLACE-ME</code> |
+| [App.css](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/App.css) | <code>❯ REPLACE-ME</code> |
+| [setupTests.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/setupTests.ts) | <code>❯ REPLACE-ME</code> |
+| [App.tsx](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/App.tsx) | <code>❯ REPLACE-ME</code> |
+| [index.tsx](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/index.tsx) | <code>❯ REPLACE-ME</code> |
+
+</details>
+
+<details closed><summary>frontend.src.types</summary>
+
+| File | Summary |
+| --- | --- |
+| [Snippet.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/types/Snippet.ts) | <code>❯ REPLACE-ME</code> |
+
+</details>
+
+<details closed><summary>frontend.src.components</summary>
+
+| File | Summary |
+| --- | --- |
+| [CreateSnippet.tsx](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/components/CreateSnippet.tsx) | <code>❯ REPLACE-ME</code> |
+| [Navbar.tsx](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/components/Navbar.tsx) | <code>❯ REPLACE-ME</code> |
+| [SnippetList.tsx](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/components/SnippetList.tsx) | <code>❯ REPLACE-ME</code> |
+
+</details>
+
+<details closed><summary>frontend.src.store</summary>
+
+| File | Summary |
+| --- | --- |
+| [snippetStore.ts](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/store/snippetStore.ts) | <code>❯ REPLACE-ME</code> |
+
+</details>
+
+<details closed><summary>frontend.public</summary>
+
+| File | Summary |
+| --- | --- |
+| [index.html](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/public/index.html) | <code>❯ REPLACE-ME</code> |
+| [manifest.json](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/public/manifest.json) | <code>❯ REPLACE-ME</code> |
+| [robots.txt](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/public/robots.txt) | <code>❯ REPLACE-ME</code> |
+
+</details>
 ---
 
 ## 🚀 Getting Started
