@@ -102,7 +102,7 @@ The app empowers developers to categorize and tag their snippets based on progra
 
 ## 🔍 Website Preview
 
-![image](https://github.com/iamvishalrathi/Podcastr/blob/main/public/sns.png)
+![image]()
 
 ---
 
