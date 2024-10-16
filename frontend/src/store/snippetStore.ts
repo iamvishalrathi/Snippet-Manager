@@ -7,6 +7,7 @@ interface SnippetStore {
     createSnippet: (snippet: Snippet) => Promise<void>;
     deleteSnippet: (id: string) => Promise<void>; // Expecting a string ID
     editSnippet: (id: string, updatedSnippet: Snippet) => Promise<void>; // Expecting a string ID and Snippet object
+    setSnippets: (snippets: Snippet[]) => void;
 }
 
 export const useSnippetStore = create<SnippetStore>((set) => ({
@@ -57,4 +58,5 @@ export const useSnippetStore = create<SnippetStore>((set) => ({
             console.error('Error editing snippet:', error);
         }
     },
+    setSnippets: (snippets) => set({ snippets }),
 }));

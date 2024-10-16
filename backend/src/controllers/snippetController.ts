@@ -4,10 +4,10 @@ import Snippet from "../models/Snippet";
 // Create Snippet
 export const createSnippet = async (req: Request, res: Response) => {
     const { snippetName, code, language, tags } = req.body;
-    console.log(tags);
+    // console.log(tags);
     try {
         const newSnippet = new Snippet({ snippetName, code, language, tags });
-        console.log(newSnippet);
+        // console.log(newSnippet);
         await newSnippet.save();
         res.status(201).json(newSnippet);
     } catch (err) {
@@ -21,11 +21,11 @@ export const createSnippet = async (req: Request, res: Response) => {
 
 // Get Snippets (with optional filters)
 export const getSnippets = async (req: Request, res: Response) => {
-    const { name, keyword, language, tags } = req.query;
+    const { snippetName, code, language, tags } = req.query;
     let filters: any = {};
 
-    if (name) filters.snippetName = { $regex: name, $options: "i" };
-    if (keyword) filters.code = { $regex: keyword, $options: "i" };
+    if (snippetName) filters.snippetName = { $regex: snippetName, $options: "i" };
+    if (code) filters.code = { $regex: code, $options: "i" };
     if (language) filters.language = language;
     if (tags) filters.tags = { $in: tags };
 
