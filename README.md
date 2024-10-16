@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/?size=512&id=55494&format=png" width="20%" alt="SNIPPET-MANAGER-logo">
+  <img src="https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/public/logo.png" width="20%" alt="SNIPPET-MANAGER-logo">
 </p>
 <p align="center">
     <h1 align="center">SNIPPET-MANAGER</h1>
