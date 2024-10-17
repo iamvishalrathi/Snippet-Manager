@@ -12,6 +12,12 @@ const SnippetList = () => {
     const editSnippet = useSnippetStore(state => state.editSnippet);
     const deleteSnippet = useSnippetStore(state => state.deleteSnippet);
 
+    //search snippets
+    const [searchSnippetName, setSearchSnippetName] = useState('');
+    const [searchCode, setSearchCode] = useState('');
+    const [searchLanguage, setSearchLanguage] = useState('');
+    const [searchTags, setSearchTags] = useState('');
+
     const [editingId, setEditingId] = useState<string | null>(null);
     const [updatedSnippet, setUpdatedSnippet] = useState({
         name: '',
@@ -84,42 +90,81 @@ const SnippetList = () => {
         }
     };
 
-    const handleSearch = async (event: React.ChangeEvent<HTMLInputElement>) => {
-        const query = event.target.value;
-        setSearchQuery(query);
+    const handleSearch = async () => {
+        let query = '';
 
-        if (query) {
-            const response = await fetch(`http://localhost:5000/api/snippets?snippetName=${query}`);
-            if (response.ok) {
-                const data = await response.json();
-                useSnippetStore.getState().setSnippets(data);
-            } else {
-                console.error("Error fetching snippets");
-            }
+        // Add snippetName to the query if provided
+        if (searchSnippetName) query += `snippetName=${searchSnippetName}&`;
+        if (searchCode) query += `code=${searchCode}&`;
+        if (searchLanguage) query += `language=${searchLanguage}&`;
+        if (searchTags) query += `tags=${searchTags.replace(/\s+/g, '+')}&`; // Replace spaces in tags with +
+
+        // Fetch filtered snippets
+        const response = await fetch(`http://localhost:5000/api/snippets?${query}`);
+        if (response.ok) {
+            const data = await response.json();
+            useSnippetStore.getState().setSnippets(data);
         } else {
-            fetchSnippets();
+            console.error("Error fetching snippets");
         }
     };
 
     return (
         <Box margin={2}>
-            {/* Search Bar with Select All Checkbox */}
-            <Grid container spacing={20} justifyContent="center" alignItems="center" sx={{ marginBottom: 3 }}>
+            {/* Search Filters */}
+            <Grid container spacing={2} justifyContent="center" alignItems="center" sx={{ marginBottom: 3 }}>
                 <Grid item>
                     <TextField
-                        label="Search Snippets"
-                        value={searchQuery}
-                        onChange={handleSearch}
+                        label="Snippet Name"
+                        value={searchSnippetName}
+                        onChange={(e) => setSearchSnippetName(e.target.value)}
                         variant="outlined"
-                        sx={{ width: '300px' }}
+                        sx={{ width: '200px' }}
                         InputProps={{
-                            style: {
-                                borderRadius: '10px',
-                            },
+                            style: { borderRadius: '10px' },
                         }}
                     />
                 </Grid>
-                <Grid item sx={{ marginLeft: 2 }}>
+                <Grid item>
+                    <TextField
+                        label="Code"
+                        value={searchCode}
+                        onChange={(e) => setSearchCode(e.target.value)}
+                        variant="outlined"
+                        sx={{ width: '200px' }}
+                        InputProps={{
+                            style: { borderRadius: '10px' },
+                        }}
+                    />
+                </Grid>
+                <Grid item>
+                    <TextField
+                        label="Language"
+                        value={searchLanguage}
+                        onChange={(e) => setSearchLanguage(e.target.value)}
+                        variant="outlined"
+                        sx={{ width: '200px' }}
+                        InputProps={{
+                            style: { borderRadius: '10px' },
+                        }}
+                    />
+                </Grid>
+                <Grid item>
+                    <TextField
+                        label="Tags (space separated)"
+                        value={searchTags}
+                        onChange={(e) => setSearchTags(e.target.value)}
+                        variant="outlined"
+                        sx={{ width: '300px' }}
+                        InputProps={{
+                            style: { borderRadius: '10px' },
+                        }}
+                    />
+                </Grid>
+                <Grid item>
+                    <Button variant="contained" color="primary" onClick={handleSearch}>Search</Button>
+                </Grid>
+                <Grid item>
                     <FormControlLabel
                         control={
                             <Checkbox
