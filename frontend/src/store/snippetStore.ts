@@ -43,7 +43,7 @@ export const useSnippetStore = create<SnippetStore>((set) => ({
     editSnippet: async (id: string, updatedSnippet: Snippet) => {
         try {
             await fetch(`http://localhost:5000/api/snippets/${id}`, {
-                method: 'PATCH',
+                method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
                 },

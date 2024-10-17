@@ -44,9 +44,9 @@ export const getSnippets = async (req: Request, res: Response) => {
 // Update Snippet
 export const updateSnippet = async (req: Request, res: Response) => {
     const { id } = req.params;
-    const { snippetName, code } = req.body;
+    const { snippetName, code, language, tags } = req.body;
     try {
-        const updatedSnippet = await Snippet.findByIdAndUpdate(id, { snippetName, code }, { new: true });
+        const updatedSnippet = await Snippet.findByIdAndUpdate(id, { snippetName, code, language, tags }, { new: true });
         if (!updatedSnippet) {
             return res.status(404).json({ message: "Snippet not found" });
         }

@@ -46,6 +46,7 @@ const SnippetList = () => {
 
     const handleSave = async () => {
         if (editingId) {
+            console.log(editingId);
             await editSnippet(editingId, {
                 _id: editingId,
                 snippetName: updatedSnippet.name,
