@@ -106,8 +106,13 @@ The app empowers developers to categorize and tag their snippets based on progra
 
 ## 🔍 Website Preview
 
-![image](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/create-snippet.png)
-![image](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/snippet-list.png)
+### 1. Create Snippet Page
+<img src="https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/create-snippet.png" width="100%" alt="create-snippet">
+<!-- ![image](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/create-snippet.png)
+![image](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/snippet-list.png) -->
+
+### 2. Snippet List Page
+<img src="https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/snippet-list.png" width="100%" alt="snippet-list">
 
 ---
 
