@@ -106,7 +106,8 @@ The app empowers developers to categorize and tag their snippets based on progra
 
 ## 🔍 Website Preview
 
-![image]()
+![image](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/create-snippet.png)
+![image](https://github.com/iamvishalrathi/snippet-manager/blob/main/frontend/src/assets/snippet-list.png)
 
 ---
 
