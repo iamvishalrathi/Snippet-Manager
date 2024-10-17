@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Box, List, ListItemButton, ListItemText, Typography } from '@mui/material';
+import { Box, List, ListItemButton, ListItemText, Typography, ListItemIcon } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 import Logo from '../logo.png'; // Update the path to your logo
 
 const Navbar: React.FC = () => {
@@ -18,15 +20,24 @@ const Navbar: React.FC = () => {
             {/* Logo Section */}
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
                 <img src={Logo} alt="Logo" style={{ width: '50px', height: '50px', marginRight: '8px' }} />
-                <Typography variant="h6" component="h1">My Snippet App</Typography> {/* Update the title as needed */}
+                <Typography variant="h6" component="h1">Snippet Manager</Typography> {/* Update the title as needed */}
             </Box>
 
             {/* Navigation Links */}
             <List>
+                {/* Create Snippet Link with Home Icon */}
                 <ListItemButton component={Link} to="/create-snippet" sx={{ '&:hover': { bgcolor: '#e0e0e0' } }}>
+                    <ListItemIcon>
+                        <HomeIcon />
+                    </ListItemIcon>
                     <ListItemText primary="Create Snippet" />
                 </ListItemButton>
+
+                {/* Snippet List Link with List Icon */}
                 <ListItemButton component={Link} to="/snippet-list" sx={{ '&:hover': { bgcolor: '#e0e0e0' } }}>
+                    <ListItemIcon>
+                        <ListAltIcon />
+                    </ListItemIcon>
                     <ListItemText primary="Snippet List" />
                 </ListItemButton>
             </List>
