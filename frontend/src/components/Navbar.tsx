@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Box, List, ListItemButton, ListItemText, Typography, ListItemIcon } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import ListAltIcon from '@mui/icons-material/ListAlt';
-import Logo from '../logo.png'; // Update the path to your logo
+import Logo from '../assets/logo.png'; // Update the path to your logo
 
 const Navbar: React.FC = () => {
     return (
